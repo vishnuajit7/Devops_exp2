@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple E-commerce</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>My Simple Shop</h1>
+    <div class="cart">
+      Cart: <span id="cart-count">0</span> items
+    </div>
+  </header>
+
+  <main>
+    <section class="products">
+
+      <div class="product" data-id="1" data-name="Red T-Shirt" data-price="19.99">
+        <img src="https://via.placeholder.com/150?text=Red+T-Shirt" alt="Red T-Shirt" />
+        <h3>Red T-Shirt</h3>
+        <p>$19.99</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product" data-id="2" data-name="Blue Jeans" data-price="49.99">
+        <img src="https://via.placeholder.com/150?text=Blue+Jeans" alt="Blue Jeans" />
+        <h3>Blue Jeans</h3>
+        <p>$49.99</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product" data-id="3" data-name="Sneakers" data-price="79.99">
+        <img src="https://via.placeholder.com/150?text=Sneakers" alt="Sneakers" />
+        <h3>Sneakers</h3>
+        <p>$79.99</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+    </section>
+
+    <section class="cart-details" id="cart-details" style="display:none;">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+      <button id="checkout-btn">Checkout</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
